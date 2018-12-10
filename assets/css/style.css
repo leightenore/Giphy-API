@@ -1,0 +1,39 @@
+body {
+    background-image: url(../images/pattern.jpg);
+    background-repeat: repeat;
+}
+
+header {
+    background: rgb(50, 179, 157);
+    color: white;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    font-size: 55px;
+    height: 110px;
+    padding: 15px;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+#icon {
+    font-size: 40px;
+}
+
+button {
+    margin: 10px;
+}
+
+#submitButton {
+    margin: 0px;
+}
+
+#add-button-section {
+    margin-top: 39px;
+    padding: 20px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    background: white;
+    height: 168px;
+}
