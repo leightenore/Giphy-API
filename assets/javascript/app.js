@@ -34,7 +34,7 @@ $("#submitButton").on("click", function(event) {
 
     createButtons();
 
-    // $("form").trigger("reset");
+    $("#show-input").val("");
 });
 
 $(document).on("click", ".show", function() {
