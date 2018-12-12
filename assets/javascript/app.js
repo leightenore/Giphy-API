@@ -56,7 +56,7 @@ $(document).on("click", ".show", function() {
           for (var i = 0; i < results.length; i++) {
 
             var showDiv = $("<div>");
-            var p = $("<p>").text("Rating: " + results[i].rating);
+            var p = $("<p>").html("<h7 id='rating-text'>Rating: " + results[i].rating + "</h7>");
             var showImage = $("<img>");
 
             showImage.attr("src", results[i].images.fixed_height_still.url);

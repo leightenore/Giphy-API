@@ -41,3 +41,16 @@ button {
 #gif-section {
     margin: 40px 0px;
 }
+
+#rating-text {
+    background-color: rgb(245, 241, 232);
+    padding: 1px;
+}
+
+/* .container {
+    margin: 10px 20px;
+}
+
+img {
+    float: left;
+} */
