@@ -41,6 +41,8 @@ $(document).on("click", ".show", function() {
     var name = $(this).attr("data-name");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + name + "&api_key=udV9kC7k1IUvAldjxaNtqlrYrpL3PSyf&limit=10&rating=pg";
 
+    $("#gif-section").empty();
+    
     $.ajax({
         url: queryURL,
         method: "GET"
