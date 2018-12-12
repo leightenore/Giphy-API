@@ -1,7 +1,7 @@
 //Global Variables
 //==============================================================================================================
 
-var shows = ["Game of Thrones", "Community", "The Good Place", "Stranger Things", "Parks and Recreation", "30 Rock", "The Office"];
+var shows = ["Game of Thrones", "Community", "The Good Place", "Stranger Things", "Unbreakable Kimmy Schmidt", "30 Rock"];
 
 //Functions
 //==============================================================================================================
