@@ -58,8 +58,15 @@ $(document).on("click", ".show", function() {
             var showImage = $("<img>");
 
             showImage.attr("src", results[i].images.fixed_height_still.url);
-            // showImage.attr("data-state", "still")
-            // showImage.addClass("gif");
+            showImage.addClass("gif");
+            showImage.attr("data-state", "still");
+            showImage.attr("data-animate", results[i].images.fixed_height.url);
+            showImage.attr("data-still", results[i].images.fixed_height_still.url);
+
+            console.log($(showImage).attr("data-state"));
+            console.log($(showImage).attr("data-animate"));
+            console.log($(showImage).attr("data-still"));
+            console.log($(showImage).attr("class"));
 
             showDiv.append(showImage);
             showDiv.append(p);
@@ -68,16 +75,16 @@ $(document).on("click", ".show", function() {
         });
 });
 
-// $(".gif").on("click", function() {
-//     var state = $(this).attr("data-state");
+$(document).on("click", ".gif", function() {
+    var state = $(this).attr("data-state");
 
-//     if (state === "still") {
-//         $(this).attr("src", $(this).attr("data-animate"));  //add a data animate attribute that has a source of the animate url
-//         $(this).attr("data-state", "animate");
-//       }
+    if (state === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-state", "animate");
+      }
 
-//       if (state === "animate") {
-//         $(this).attr("src", $(this).attr("data-still"));
-//         $(this).attr("data-state", "still");
-//       }
-// });
+      if (state === "animate") {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", "still");
+      }
+});
