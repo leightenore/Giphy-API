@@ -1,7 +1,7 @@
 //Global Variables
 //==============================================================================================================
 
-var shows = ["Game of Thrones", "Community", "The Good Place", "Stranger Things", "Unbreakable Kimmy Schmidt", "30 Rock"];
+var shows = ["Game of Thrones", "Community", "The Good Place", "Stranger Things", "30 Rock", "The Office"];
 
 //Functions
 //==============================================================================================================
@@ -59,11 +59,11 @@ $(document).on("click", ".show", function() {
             var p = $("<p>").html("<h7 id='rating-text'>Rating: " + results[i].rating + "</h7>");
             var showImage = $("<img>");
 
-            showImage.attr("src", results[i].images.fixed_height_still.url);
+            showImage.attr("src", results[i].images.original_still.url);
             showImage.addClass("gif");
             showImage.attr("data-state", "still");
-            showImage.attr("data-animate", results[i].images.fixed_height.url);
-            showImage.attr("data-still", results[i].images.fixed_height_still.url);
+            showImage.attr("data-animate", results[i].images.original.url);
+            showImage.attr("data-still", results[i].images.original_still.url);
 
             console.log($(showImage).attr("data-state"));
             console.log($(showImage).attr("data-animate"));
