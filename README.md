@@ -14,6 +14,9 @@ An app that utilizes Giphy's API to display gifs from different TV shows. Click 
 * jQuery
 * Bootstrap
 
+### External APIs
+
+* [Giphy](https://developers.giphy.com/docs/)
 
 
 
